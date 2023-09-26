@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Caprasimo&family=Caveat&family=Chewy&family=Dancing+Script:wght@400;600;700&family=Domine&family=Kalam&family=Lato:wght@100;400&family=Lora:ital,wght@0,400;1,500&family=Lugrasimo&family=Merriweather&family=Noto+Sans&family=Oswald:wght@300&family=PT+Serif&family=Pacifico&family=Poppins:ital@0;1&family=REM:wght@300&family=Roboto:ital,wght@0,500;1,400&family=Signika+Negative:wght@300&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <title>form validation</title>
+    <link rel="stylesheet" href="asset/style/master.css">
+</head>
+
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form onsubmit="myForm(event)" action="reg.php" name="signup">
+                <h1>create account</h1>
+                <span style="margin-top: 30px;">or use your email for registeration</span>
+                <input type="text" placeholder="name" name="name">
+                <label for="" style="color:red">error eccured!</label>
+                <input type="text" placeholder="email" name="email">
+                <label for="" style="color:red">error eccured!</label>
+                <input type="text" placeholder="password" name="pass">
+                <label for="" style="color:red">error eccured!</label>
+                <button>sign up</button>
+            </form>
+
+        </div>
+        <div class="form-container sign-in-container">
+            <form onsubmit="myForms(event)" action="reg.php" name="signin">
+                <h1>sign in</h1>
+                <span style="margin-top: 20px;">or use your account</span>
+                <input type="text" placeholder="email" name=email>
+                <label for="" style="color:red">error eccured!</label>
+                <input type="text" placeholder="password" name="pass">
+                <label for="" style="color:red">error eccured!</label>
+                <a href="#">forget your password?</a>
+                <button>sign in</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>welcome back!</h1>
+                    <p>to keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">sign in</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>hello,friend!</h1>
+                    <p>enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> create by parastoo asgari</p>
+    </div>
+</body>
+<script src="asset/js/master.js"></script>
+
+</html>
